@@ -4,3 +4,4 @@ Videos
 229: JSP II => saludo.jsp
 230: JSP III => Ejemplo_Expresiones.jsp, Ejemplo_Scriplets.jsp, Ejemplo_Declaraciones.jsp
 231: JSP IV => Calculos.java, Calculos.jsp
+232: JSP V => Ejemplo_Objectos.jsp
