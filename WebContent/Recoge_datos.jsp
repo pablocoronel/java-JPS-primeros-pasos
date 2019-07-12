@@ -17,17 +17,25 @@
 		String pais = request.getParameter("pais");
 		String tecnologias = request.getParameter("tecnologias");
 
+		// Carga dinamica del driver para la BD
+		Class.forName("com.mysql.jdbc.Driver");
 		// conexion a BD
-		Connection mi_conexion = DriverManager.getConnection("jdbc:mysql:/localhost:3306/proyecto_jsp", "root", "");
-		Statement mi_statement = mi_conexion.createStatement();
+		try {
 
-		String instruccion_sql = "INSERT INTO usuarios (nombre, apellido, usuario, contrasena, pais, tecnologia) VALUES ('"
-				+ nombre + "', '" + apellido + "', '" + usuario + "', '" + contra + "', '" + pais + "', '"
-				+ tecnologias + "')";
+			Connection mi_conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/proyecto_jsp", "root",
+					"");
+			Statement mi_statement = mi_conexion.createStatement();
 
-		mi_statement.executeUpdate(instruccion_sql);
+			String instruccion_sql = "INSERT INTO usuarios (nombre, apellido, usuario, contrasena, pais, tecnologia) VALUES ('"
+					+ nombre + "', '" + apellido + "', '" + usuario + "', '" + contra + "', '" + pais + "', '"
+					+ tecnologias + "')";
 
-		out.println("Registrado con exito");
+			mi_statement.executeUpdate(instruccion_sql);
+
+			out.println("Registrado con exito");
+		} catch (Exception e) {
+			out.println("ha habido un error");
+		}
 	%>
 </body>
 </html>
