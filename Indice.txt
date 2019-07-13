@@ -9,3 +9,4 @@ Videos
 234: JSP VII => formulario-para-registro.html, Recoge_datos.jsp
 235: JSP VIII => Recoge_datos.jsp
 236: JSP IX => formulario-login.html, Comprueba_Usuario.jsp
+237: JSP X. Sesiones I => Lista_Compra.jsp
