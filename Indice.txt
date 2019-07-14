@@ -11,3 +11,5 @@ Videos
 236: JSP IX => formulario-login.html, Comprueba_Usuario.jsp
 237: JSP X. Sesiones I => Lista_Compra.jsp
 238: JSP XI. Sesiones II => Lista_Compra.jsp
+238: JSP XII Cookies I => Teoria, Formulario_envia_datos.jsp
+239: JSP XIII Cookies II => Formulario_envia_datos.jsp
