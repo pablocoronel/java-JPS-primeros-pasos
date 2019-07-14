@@ -13,3 +13,4 @@ Videos
 238: JSP XI. Sesiones II => Lista_Compra.jsp
 238: JSP XII Cookies I => Teoria, Formulario_envia_datos.jsp
 239: JSP XIII Cookies II => Formulario_envia_datos.jsp
+240: JSP XIII Cookies II => Formulario_envia_datos.jsp, recibe_peticion.jsp, agencia_viajes.jsp
