@@ -30,12 +30,26 @@
 
 	<ul>
 		<%
+			// listado de elementos del carrito (es la sesion)
+			ArrayList<String> listado = (ArrayList<String>) session.getAttribute("carrito");
+
+			// si la lista está vacia inicializa el ArrayLIst
+			if (listado == null) {
+				listado = new ArrayList<String>();
+				session.setAttribute("carrito", listado);
+			}
+
 			String[] elementos = request.getParameterValues("articulos");
 
 			if (elementos != null) {
 				for (String el : elementos) {
-					out.println("<li>" + el + "</li>");
+					listado.add(el);
 				}
+			}
+
+			//ver
+			for (String el : listado) {
+				out.println("<li>" + el + "</li>");
 			}
 		%>
 	</ul>
