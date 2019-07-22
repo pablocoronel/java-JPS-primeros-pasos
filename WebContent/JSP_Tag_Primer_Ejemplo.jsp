@@ -22,15 +22,15 @@
 	<%
 		//String a[] = (String[]) pageContext.getAttribute("losAlumnos");
 
-		out.println("java (jsp normal) \n");
+		/* out.println("java (jsp normal) \n");
 		for (String temp_alumnos : alumnos) {
 			out.print(temp_alumnos + "<br>");
-		}
+		} */
 	%>
 
 	<!-- con tags -->
-	<c:forEach var="tempAlumnos" items="${alumnos}">
-		${teempAlumnos} <br />
+	<c:forEach var="tempAlumnos" items="${losAlumnos}">
+		${tempAlumnos} <br />
 	</c:forEach>
 </body>
 </html>
