@@ -63,6 +63,7 @@
 			<tr>
 				<td>${empleadoTemp.nombre}</td>
 				<td>
+					<!-- es como un switch -->
 					<c:choose>
 						<c:when test="${empleadoTemp.apellido == 'Fernandez'}">
 							<b>${empleadoTemp.apellido}</b>
